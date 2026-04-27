@@ -5,3 +5,4 @@ google-generativeai
 google-cloud-vision
 python-dotenv
 beautifulsoup4
+python-multipart
