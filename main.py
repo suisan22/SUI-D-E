@@ -16,6 +16,9 @@ gemini_key = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=gemini_key)
 
 app = FastAPI()
+@app.get("/")
+async def root():
+    return {"status": "success", "message": "SUI-D-E API is online and ready for scans!"}
 
 # Enable CORS for your frontend
 app.add_middleware(
