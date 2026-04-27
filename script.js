@@ -52,7 +52,7 @@ async function scanUrl() {
     body.innerHTML = '<tr><td colspan="2" class="px-6 py-8 text-center text-blue-400 animate-pulse">Analyzing...</td></tr>';
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/scan', {
+        const response = await fetch('https://sui-d-e.onrender.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ url: url })
