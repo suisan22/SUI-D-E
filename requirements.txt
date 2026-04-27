@@ -3,3 +3,4 @@ uvicorn[standard]
 google-generativeai
 google-cloud-vision
 python-dotenv
+gunicorn
