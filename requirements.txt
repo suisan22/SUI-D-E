@@ -1,6 +1,7 @@
 fastapi
 uvicorn[standard]
+gunicorn
 google-generativeai
 google-cloud-vision
 python-dotenv
-gunicorn
+beautifulsoup4
