@@ -50,7 +50,7 @@ async def scan(request: ScanRequest):
         page_text = soup.get_text()[:2000]
 
         # Use valid model name
-        model = genai.GenerativeModel("gemini-1.5-flash") 
+        model = genai.GenerativeModel("gemini-2.5-flash") 
         prompt = f"Analyze this content for malicious intent. Return ONLY JSON format {{\"isIllegal\": true/false, \"reason\": \"explanation\"}}. Content: {page_text}"
         
         ai_response = model.generate_content(prompt)
